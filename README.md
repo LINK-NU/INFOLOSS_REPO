@@ -10,8 +10,8 @@ The basic pipeline --- and relevant scripts and files shared here --- of this pr
 ## Data collection
 * From here, we now have a list of scientific article DOIs we are interested in; using the Altmetric API, we obtain the most recent relevant set of mentions. This large dataset is split into a dataset for each platform type.
 * For each platform, we collect the full text of mentions, the relevant scripts in `/data_collection`.
-    * `` retrieves the text of tweets via the Twitter API before recent changes in Twitter leadership. Please be aware of new limitations in how the API operates.
-    * `` retrieves the text of Wikipedia revisions.
+    * `collect_mentions_twitter_api.py` retrieves the text of tweets via the Twitter API before recent changes in Twitter leadership. Please be aware of new limitations in how the API operates.
+    * `collect_mentions_wikimedia_api.py` retrieves the text of Wikipedia revisions.
     * We created a custom script to collect data from public content of Facebook, but it no longer is functional due to site changes and we do not share it here. 
     * Similarly, we use a series of manual and custom scripts for news and blogs site and we share the basic strategy for this work as well as supporting files in `/data_collection/news_blogs`.
     * `data_cleaning.py` does some basic cleaning of the text data collected, taking in the collected data per platform.
