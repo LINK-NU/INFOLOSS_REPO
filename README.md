@@ -4,9 +4,9 @@ The public interest in accurate scientific communication, underscored by recent 
 
 *Citation*: Hwang, S., Horvát, E-Á., Romero, D., 2023. Information Retention in the Multi-Platform Sharing of Science. *International AAAI Conference on Web and Social Media (ICWSM)*.
 
-<--This is the public repo for sharing scripts related to information retention project published in ICWSM2023, with pre-print available [here](https://arxiv.org/abs/2207.13815).-->
+<!-- This is the public repo for sharing scripts related to information retention project published in ICWSM2023, with pre-print available [here](https://arxiv.org/abs/2207.13815).  -->
 
-<--The basic pipeline --- and relevant scripts and files shared here --- of this project is as follows:-->
+<!-- The basic pipeline --- and relevant scripts and files shared here --- of this project is as follows: -->
 
 ## Curating a set of relevant research articles to examine
 * From the 2018 and 2019 dump data from Altmetric (the snapshot of the entire data available from the API at a given time), we identified a subset of articles of interest; in the case of our work, we used the dump datasets to identify papers among the 25,000 most mentioned articles in both years, adapting a script shared by Hao Peng: `hao_dump_filtering_code.py`. We run this script for each year's dump and find the overlap. 
