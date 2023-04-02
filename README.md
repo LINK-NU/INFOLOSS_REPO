@@ -1,7 +1,12 @@
 # Information Retention in the Multi-Platform Sharing of Science.
-This is the public repo for sharing scripts related to information retention project published in ICWSM2023, with pre-print available [here](https://arxiv.org/abs/2207.13815).
 
-The basic pipeline --- and relevant scripts and files shared here --- of this project is as follows:
+The public interest in accurate scientific communication, underscored by recent public health crises, highlights how content often loses critical pieces of information as it spreads online. However, multi-platform analyses of this phenomenon remain limited due to challenges in data collection. Collecting mentions of research tracked by Altmetric LLC, we examine information retention in the over 4 million online posts referencing 9,765 of the most-mentioned scientific articles across blog sites, Facebook, news sites, Twitter, and Wikipedia. To do so, we present a burst-based framework for examining online discussions about science over time and across different platforms. To measure information retention we develop a keyword-based computational measure comparing an online post to the scientific article's abstract. We evaluate our measure using ground truth data labeled by within field experts. We highlight three main findings: first, we find a strong tendency towards low levels of information retention, following a distinct trajectory of loss except when bursts of attention begin in social media. Second, platforms show significant differences in information retention. Third, sequences involving more platforms tend to be associated with higher information retention. These findings highlight a strong tendency towards information loss over time - posing a critical concern for researchers, policymakers, and citizens alike - but suggest that multi-platform discussions may improve information retention overall.
+
+*Citation*: Hwang, S., Horvát, E-Á., Romero, D., 2023. Information Retention in the Multi-Platform Sharing of Science. *International AAAI Conference on Web and Social Media (ICWSM)*.
+
+<--This is the public repo for sharing scripts related to information retention project published in ICWSM2023, with pre-print available [here](https://arxiv.org/abs/2207.13815).-->
+
+<--The basic pipeline --- and relevant scripts and files shared here --- of this project is as follows:-->
 
 ## Curating a set of relevant research articles to examine
 * From the 2018 and 2019 dump data from Altmetric (the snapshot of the entire data available from the API at a given time), we identified a subset of articles of interest; in the case of our work, we used the dump datasets to identify papers among the 25,000 most mentioned articles in both years, adapting a script shared by Hao Peng: `hao_dump_filtering_code.py`. We run this script for each year's dump and find the overlap. 
